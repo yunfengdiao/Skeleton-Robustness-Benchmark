@@ -9,10 +9,5 @@ Key Features of RobustBenchHAR:
 + **Evaluate the robustness of various models and datasets**: RobustBenchHAR provides a plug-and-play interface to verify the robustness of models on different data sets.
 + **A summary of transfer-based attacks and defenses**: RobustBenchHAR reviews numerous transfer-based attacks and adversarial defenses, making it easy to get the whole picture of transfer-based attacks for practitioners.
 
-## Dependencies
-1. Python 3.7
-2. pytorch 2.0.0
-3. Cuda 11.7
-
 ## Usage
 **The complete code will be available soon.**
