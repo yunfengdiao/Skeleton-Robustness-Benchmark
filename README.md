@@ -4,6 +4,10 @@ RobustBenchHAR is a pytorch framework to boost and evaluate the adversarial tran
 
 > **ICLR2025 TASAR: Transfer-based Attack on Skeletal Action Recognition**
 
+<div style="text-align: center;">
+<img src="./figs/highlevel.png" alt="High-Level" style="width: 80%; display: inline-block;">
+</div>
+
 Key Features of RobustBenchHAR:
 + **A benchmark for evaluating existing transfer-based attacks in human Activity Recognition (HAR)**: RobustBenchHAR ensembles existing transfer-based attacks including several types and fairly evaluates various transfer-based attacks under the same setting.
 + **Evaluate the robustness of various models and datasets**: RobustBenchHAR provides a plug-and-play interface to verify the robustness of models on different data sets.
