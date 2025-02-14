@@ -72,7 +72,8 @@ python main.py -classifier STGCN,CTRGCN,MSG3D --routine attack -attacker [ENSEMB
 ```
 
 2. **[BA](https://arxiv.org/pdf/2302.05086)**
-   Before starting the attack, you first need to fine-tune to get the surrogate model by:
+
+Before starting the attack, you first need to fine-tune to get the surrogate model by:
 
 ```
 python main.py -classifier STGCN --routine finetune --dataset hdm05 --trainFile classTrain.npz --testFile classTest.npz --dataPath ../data/ --retPath ../results/ -ep 20 -cn 65 -bs 64 -lr 0.01
