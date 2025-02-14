@@ -13,6 +13,11 @@ Key Features of RobustBenchHAR:
 + **Evaluate the robustness of various models and datasets**: RobustBenchHAR provides a plug-and-play interface to verify the robustness of models on different data sets.
 + **A summary of transfer-based attacks and defenses**: RobustBenchHAR reviews numerous transfer-based attacks and adversarial defenses, making it easy to get the whole picture of transfer-based attacks for practitioners.
 
+## Dataset and Checkpoints
+1. We adopt the Dataset in [BEAT](https://github.com/realcrane/Defending-Black-box-Skeleton-based-Human-Activity-Classifiers/tree/main), you can download it form [BaiduNetdisk link](https://pan.baidu.com/s/1s2IzT_hX3IHQ9qWxIwQZng?pwd=9rwa)
+
+2. The hdm05 checkpoints we used in our experiments can be downloaded from [BaiduNetdisk](https://pan.baidu.com/s/1HLtNmDoaFY5mUPbJdefvQQ?pwd=5d9c)
+
 ## Usage
 The detailed benchmark setting are available in "TASAR: Transfer-based Attack on Skeletal Action Recognition". The complete usage is as follows:
 
@@ -32,7 +37,7 @@ Training the classifier will generate two models by default: the minimal loss mo
 python main.py -classifier STGCN --routine test --dataset hdm05 --testFile classTest.npz --trainedModelFile minValLossModel.pth --dataPath ../data/ -retPath ../results/ -cn 65 -bs 64
 ```
 
-## collect all the correctly recognised samples for attack
+## Collect all the correctly recognised samples for attack
 
 ```
 python main.py -classifier STGCN --routine gatherCorrectPrediction --dataset hdm05 --testFile classTest.npz --trainedModelFile minValLossModel.pth --dataPath ../data/ -retPath ../results/ -cn 65
