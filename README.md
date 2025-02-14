@@ -2,7 +2,7 @@
 
 RobustBenchHAR is a pytorch framework to boost and evaluate the adversarial transferability for Human skeletal behavior recognition. Official code for the paper:
 
-> **ICLR2025 TASAR: Transfer-based Attack on Skeletal Action Recognition**
+> **[ICLR2025 TASAR: Transfer-based Attack on Skeletal Action Recognition](https://arxiv.org/abs/2409.02483)**
 
 <div style="text-align: center;">
 <img src="./figs/highlevel.png" alt="High-Level" style="width: 80%; display: inline-block;">
@@ -54,12 +54,6 @@ python main.py -classifier STGCN,CTRGCN,MSG3D --routine gatherCorrectPrediction 
 python main.py -classifier STGCN --routine attack -attacker [FGSM, MI-FGSM, SMART, MIG, CIASA] --trainedModelFile minValLossModel.pth -cp 0.01 --dataset hdm05 --trainFile adClassTrain.npz --testFile classTest.npz --dataPath ../results/ -retPath ../results/ -cn 65 --epochs 200 --batchSize 16 --attackType untarget
 ```
 
-1. **[I-FGSM](https://arxiv.org/abs/1412.6572)**
-
-```
-python main.py -classifier STGCN --routine attack -attacker FGSM --trainedModelFile minValLossModel.pth -cp 0.01 --dataset hdm05 --trainFile adClassTrain.npz --testFile classTest.npz --dataPath ../results/ -retPath ../results/ -cn 65 --epochs 200 --batchSize 16 --attackType untarget
-```
-
 
 ## Input transformation-based
 
@@ -71,19 +65,13 @@ python main.py -classifier STGCN --routine attack -attacker Augment --trainedMod
 
 ## Ensemble-based
 
-1. **[ENSEMBLEA](https://openaccess.thecvf.com/content_cvpr_2018/papers/Dong_Boosting_Adversarial_Attacks_CVPR_2018_paper.pdf)**
+1. **[ENSEMBLEA](https://openaccess.thecvf.com/content_cvpr_2018/papers/Dong_Boosting_Adversarial_Attacks_CVPR_2018_paper.pdf)**, **[SVRE](https://arxiv.org/pdf/2111.10752)**
 
 ```
-python main.py -classifier STGCN,CTRGCN,MSG3D --routine attack -attacker ENSEMBLE --trainedModelFile minValLossModel.pth -cp 0.01 --dataset hdm05 --trainFile adClassTrain.npz --testFile classTest.npz --dataPath ../results/ -retPath ../results/ -cn 65 --epochs 200 --batchSize 16 --attackType untarget --ensemble True
+python main.py -classifier STGCN,CTRGCN,MSG3D --routine attack -attacker [ENSEMBLE, SVRE] --trainedModelFile minValLossModel.pth -cp 0.01 --dataset hdm05 --trainFile adClassTrain.npz --testFile classTest.npz --dataPath ../results/ -retPath ../results/ -cn 65 --epochs 200 --batchSize 16 --attackType untarget --ensemble True
 ```
 
-2. **[SVRE](https://arxiv.org/pdf/2111.10752)**
-
-```
-python main.py -classifier STGCN,CTRGCN --routine attack -attacker SVRE --trainedModelFile minValLossModel.pth -cp 0.01 --dataset hdm05 --trainFile adClassTrain.npz --testFile classTest.npz --dataPath ../results/ -retPath ../results/ -cn 65 --epochs 200 --batchSize 16 --attackType untarget --ensemble True
-```
-
-3. **[BA](https://arxiv.org/pdf/2302.05086)**
+2. **[BA](https://arxiv.org/pdf/2302.05086)**
    Before starting the attack, you first need to fine-tune to get the surrogate model by:
 
 ```
@@ -96,7 +84,7 @@ Then attack by:
 python main.py -classifier STGCN --routine attack -attacker BA --trainedModelFile minValLossModel.pth -cp 0.01 --dataset hdm05 --trainFile adClassTrain.npz --testFile classTest.npz --dataPath ../results/ -retPath ../results/ -cn 65 --epochs 200 --batchSize 16 --attackType untarget
 ```
 
-4. **TASAR**
+3. **TASAR**
 
 You first need to post-train the pre-trained model by:
 
