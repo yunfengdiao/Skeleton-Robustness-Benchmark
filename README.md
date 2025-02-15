@@ -146,7 +146,7 @@ The code has not been exhaustively tested. You need to run it at your own risk. 
 ```
 @article{tasar,
   title={TASAR: Transfer-based Attack on Skeletal Action Recognition},
-  author={Diao, Yunfeng and Wu, Baiqi and Zhang, Ruixuan and Liu, Ajian and Wei, Xingxing and Wang, Meng and Wang, He},
+  author={Diao, Yunfeng and Wu, Baiqi and Zhang, Ruixuan and Liu, Ajian and Hao, Xiaoshuai and Wei, Xingxing and Wang, Meng and Wang, He},
   journal={arXiv preprint arXiv:2409.02483},
   year={2024}
 }
