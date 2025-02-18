@@ -158,7 +158,7 @@ Project Webpage: http://drhewang.com/pages/AAHAR.html
 
 
 ## Citation (Bibtex)
-Please cite our papers if you find it useful:
+Please cite our papers if you find our work useful:
 
 1. Yunfeng Diao, Baiqi Wu, Ruixuan Zhang, Ajian Liu, Xingxing Wei, Meng Wang, and He Wang, TASAR: Transfer-based Attack on Skeletal Action Recognition, International Conference on Learning Representations (ICLR) 2025.
 
