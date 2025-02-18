@@ -18,6 +18,8 @@ Key Features of RobustBenchHAR:
 
 2. The hdm05 checkpoints we used in our experiments can be downloaded from [BaiduNetdisk link](https://pan.baidu.com/s/1HLtNmDoaFY5mUPbJdefvQQ?pwd=5d9c)
 
+3. The complete checkpoints will be available soon...
+
 ## Usage
 The detailed benchmark setting are available in "TASAR: Transfer-based Attack on Skeletal Action Recognition". The complete usage is as follows:
 
