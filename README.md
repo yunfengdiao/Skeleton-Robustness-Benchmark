@@ -1,6 +1,6 @@
 # Skeleton-Robustness-Benchmark(RobustBenchHAR)
 
-RobustBenchHAR is a pytorch framework to boost and evaluate the adversarial transferability for Human skeletal behavior recognition. Official code for the paper:
+RobustBenchHAR is a pytorch framework to boost and evaluate the adversarial robustness for Human skeletal behavior recognition. Official code for the paper:
 
 > **[ICLR2025 TASAR: Transfer-based Attack on Skeletal Action Recognition](https://arxiv.org/abs/2409.02483)**
 
