@@ -141,9 +141,11 @@ When the attack is complete, the generated adversarial examples will be saved in
 python main.py -classifier STGCN --routine test --transfer_attack True --dataset ntu60 --trainedModelFile minValLossModel.pth --dataPath ../data/ -retPath ../results/ -cn 60 -bs 16 --transfer_path {adv_examples_path}
 ```
 
-## Warning
-The code has not been exhaustively tested. You need to run it at your own risk. The author will try to actively maintain it and fix reported bugs but this can be delayed.
+## Warning and Suggestion
+1. The code has not been exhaustively tested. You need to run it at your own risk. The author will try to actively maintain it and fix reported bugs but this can be delayed.
 
+2. Since the execution of TASAR requires configuring the rpy2 package, it requires setting environment variables. In order to avoid system crashes when users configure the benchmark environment, we designed two main functions, one for using benchmark and the other for TASAR. If the user is not familiar with the linux operating system, it is recommended to use the former main function.
+   
 ## Authors
 
 Yunfeng Diao, Baiqi Wu, Ruixuan Zhang, Ajian Liu, Xingxing Wei, Meng Wang, and He Wang
