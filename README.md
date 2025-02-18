@@ -51,7 +51,7 @@ This process by default generates a file called adClassTrain.npz under --retFold
 python main.py -classifier STGCN,CTRGCN,MSG3D --routine gatherCorrectPrediction --dataset hdm05 --testFile classTest.npz --trainedModelFile minValLossModel.pth --dataPath ../data/ -retPath ../results/ -cn 65 --ensemble True
 ```
 
-## Attack(untarget by default)
+## Attack(untargeted attack by default)
 
 ## Gradient-based
 
