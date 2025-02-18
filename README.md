@@ -94,6 +94,8 @@ python main.py -classifier STGCN --routine attack -attacker BA --trainedModelFil
 
 3. **TASAR**
 
+**Noting: If you want to quickly reproduce the results of this paper, you can use the checkpoints provided above.**
+
 You first need to post-train the pre-trained model by:
 
 ```
