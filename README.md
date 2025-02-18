@@ -9,9 +9,9 @@ RobustBenchHAR is a pytorch framework to boost and evaluate the adversarial robu
 </div>
 
 Key Features of RobustBenchHAR:
-+ **A benchmark for evaluating existing transfer-based attacks in human Activity Recognition (HAR)**: RobustBenchHAR ensembles existing transfer-based attacks including several types and fairly evaluates various transfer-based attacks under the same setting.
++ **The first large-scale benchmark for evaluating adversarial robustness in human Activity Recognition (HAR)**: RobustBenchHAR ensembles existing adversarial attacks including several types and fairly evaluates various attacks under the same setting.
 + **Evaluate the robustness of various models and datasets**: RobustBenchHAR provides a plug-and-play interface to verify the robustness of models on different data sets.
-+ **A summary of transfer-based attacks and defenses**: RobustBenchHAR reviews numerous transfer-based attacks and adversarial defenses, making it easy to get the whole picture of transfer-based attacks for practitioners.
++ **A summary of transfer-based attacks and defenses**: RobustBenchHAR reviews multiple adversarial attacks and defenses, making it easy to get the whole picture of attacks for practitioners.
 
 ## Dataset and Checkpoints
 1. We adopt the Dataset in [BEAT](https://github.com/realcrane/Defending-Black-box-Skeleton-based-Human-Activity-Classifiers/tree/main), you can download it from [BaiduNetdisk link](https://pan.baidu.com/s/1s2IzT_hX3IHQ9qWxIwQZng?pwd=9rwa)
@@ -100,7 +100,7 @@ You first need to post-train the pre-trained model by:
 python main_TASAR.py -classifier ExtendedBayesian --baseClassifier STGCN --routine bayesianTrain --dataset hdm05 -adTrainer PDBATrainer --trainFile classTrain.npz --testFile classTest.npz --dataPath ../data/ --retPath ../results/ -ep 5 -cn 65 --trainedModelFile minValLossModel.pth -bs 32 -lr 2e-3 --bayesianModelNum 3
 ```
 
-Then performethe The Dual Bayesian sampling in post-train models
+Then perform the The Dual Bayesian sampling in post-train models
 
 ```
 python main_TASAR.py -classifier ExtendedBayesian --baseClassifier STGCN --routine DualBayesian --dataset hdm05 -adTrainer PDBATrainer --trainFile classTrain.npz --testFile classTest.npz --dataPath ../data/ --retPath ../results/ -ep 5 -cn 65 --trainedModelFile minValLossModel.pth -bs 32 -lr 2e-3 --bayesianModelNum 3 --trainedAppendedModelFile yes
@@ -144,12 +144,69 @@ python main.py -classifier STGCN --routine test --transfer_attack True --dataset
 ## Warning
 The code has not been exhaustively tested. You need to run it at your own risk. The author will try to actively maintain it and fix reported bugs but this can be delayed.
 
-## Citation
-```
-@article{tasar,
-  title={TASAR: Transfer-based Attack on Skeletal Action Recognition},
-  author={Diao, Yunfeng and Wu, Baiqi and Zhang, Ruixuan and Liu, Ajian and Hao, Xiaoshuai and Wei, Xingxing and Wang, Meng and Wang, He},
-  journal={arXiv preprint arXiv:2409.02483},
-  year={2024}
-}
-```
+## Authors
+
+Yunfeng Diao, Baiqi Wu, Ruixuan Zhang, Ajian Liu, Xingxing Wei, Meng Wang, and He Wang
+
+Yunfeng Diao, diaoyunfeng@hfut.edu.cn, [Faculty page](http://faculty.hfut.edu.cn/diaoyunfeng/en/index.htm)
+
+Baiqi Wu, 2021214516@mail.hfut.edu.cn
+
+He Wang, he_wang@@ucl.ac.uk, [Personal website](https://drhewang.com)
+
+Project Webpage: http://drhewang.com/pages/AAHAR.html
+
+
+## Citation (Bibtex)
+Please cite our papers if you find it useful:
+
+1. Yunfeng Diao, Baiqi Wu, Ruixuan Zhang, Ajian Liu, Xingxing Wei, Meng Wang, and He Wang, TASAR: Transfer-based Attack on Skeletal Action Recognition, International Conference on Learning Representations (ICLR) 2025.
+
+    @inproceedings{diao2025tasar,
+     author = {Yunfeng Diao and Baiqi Wu and Ruixuan Zhang and Ajian Liu and Xingxing Wei and Meng Wang and He Wang},
+     title = {TASAR: Transfer-based Attack on Skeletal Action Recognition},
+     booktitle = {The International Conference on Learning Representations (ICLR)},
+     year = {2025}
+   }
+
+3.  Yunfeng Diao*, He Wang*, Tianjia Shao, Yong-Liang Yang, Kun Zhou, David Hogg, Understanding the Vulnerability of Skeleton-based Human Activity Recognition via Black-box Attack, Pattern Recognition 2024.
+  
+    @article{diao2024understanding,
+     title={Understanding the vulnerability of skeleton-based Human Activity Recognition via black-box attack},
+     author={Diao, Yunfeng and Wang, He and Shao, Tianjia and Yang, Yongliang and Zhou, Kun and Hogg, David and Wang, Meng},
+     journal={Pattern Recognition},
+     volume={153},
+     pages={110564},
+     year={2024},
+     publisher={Elsevier}
+   }
+
+4. He Wang*, Yunfeng Diao*, Zichang Tan and Guodong Guo, Defending Black-box Skeleton-based Human Activity Classifiers, the AAAI conference on Aritificial Intelligence (AAAI) 2023.
+ 
+    @InProceedings{Wang_Defending_2023,
+    author={Wang, He and Diao, Yunfeng and Tan, Zichang and Guo, Guodong},
+    booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+    title={Defending Black-box Skeleton-based Human Activity Classifiers},
+    year={2023},
+    month={June},
+    }
+
+3. He Wang, Feixiang He, Zhexi Peng, Tianjia Shao, Yongliang Yang, Kun Zhou and David Hogg, Understanding the Robustness of Skeleton-based Action Recognition under Adversarial Attack, CVPR 2021
+
+    @InProceedings{Wang_Understanding_2020,
+    author={He Wang, Feixiang He, Zhexi Peng, Tianjia Shao, Yongliang Yang, Kun Zhou and David Hogg},
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    title={Understanding the Robustness of Skeleton-based Action Recognition under Adversarial Attack},
+    year={2021},
+    month={June},
+    }
+
+4. Yunfeng Diao, Tianjia Shao, Yongliang Yang, Kun Zhou and He Wang, BASAR:Black-box Attack on Skeletal Action Recognition, CVPR 2021
+
+    @InProceedings{Diao_Basar_2020,
+    author={Yunfeng Diao, Tianjia Shao, Yongliang Yang, Kun Zhou and He Wang},
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    title={BASAR:Black-box Attack on Skeletal Action Recognition},
+    year={2021},
+    month={June},
+    }
