@@ -20,6 +20,9 @@ Key Features of RobustBenchHAR:
 
 3. The complete checkpoints will be available soon...
 
+4. The hugging face link will be available soon...
+
+
 ## Usage
 The detailed benchmark setting are available in "TASAR: Transfer-based Attack on Skeletal Action Recognition". The complete usage is as follows:
 
