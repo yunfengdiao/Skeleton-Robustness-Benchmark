@@ -16,11 +16,9 @@ Key Features of RobustBenchHAR:
 ## Dataset and Checkpoints
 1. We adopt the Dataset in [BEAT](https://github.com/realcrane/Defending-Black-box-Skeleton-based-Human-Activity-Classifiers/tree/main), you can download it from [BaiduNetdisk link](https://pan.baidu.com/s/1s2IzT_hX3IHQ9qWxIwQZng?pwd=9rwa)
 
-2. The hdm05 checkpoints we used in our experiments can be downloaded from [BaiduNetdisk link](https://pan.baidu.com/s/1HLtNmDoaFY5mUPbJdefvQQ?pwd=5d9c)
+2. The complete checkpoints we used in our experiments can be downloaded from [BaiduNetdisk link]([https://pan.baidu.com/s/1HLtNmDoaFY5mUPbJdefvQQ?pwd=5d9c](https://pan.baidu.com/s/1n40kCNJxJScKVVY06q6S3Q?pwd=242x))
 
-3. The complete checkpoints will be available soon...
-
-4. The hugging face link will be available soon...
+3. The hugging face link will be available soon...
 
 
 ## Usage
