@@ -18,8 +18,7 @@ Key Features of RobustBenchHAR:
 
 2. The complete checkpoints we used in our experiments can be downloaded from [BaiduNetdisk link](https://pan.baidu.com/s/1n40kCNJxJScKVVY06q6S3Q?pwd=242x) or [GoogleDrive link](https://drive.google.com/drive/folders/149ZBslY5xeuZ-J0CT48Ohv3sCdsNZ5Br?usp=sharing)
 
-3. The hugging face link will be available soon...
-
+3. Meanwhile, you can also download checkpoints by our [huggingface link](https://huggingface.co/WuBaiqi/Skeleton-Robustness-Benchmark) .
 
 ## Usage
 The detailed benchmark setting are available in "TASAR: Transfer-based Attack on Skeletal Action Recognition". The complete usage is as follows:
