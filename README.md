@@ -9,7 +9,7 @@ RobustBenchHAR is a pytorch framework to boost and evaluate the adversarial robu
 </div>
 
 Key Features of RobustBenchHAR:
-+ **The first large-scale benchmark for evaluating adversarial robustness in human Activity Recognition (HAR)**: RobustBenchHAR ensembles existing adversarial attacks including several types and fairly evaluates various attacks under the same setting.
++ **The first large-scale benchmark for evaluating adversarial robustness in Human Activity Recognition (HAR)**: RobustBenchHAR ensembles existing adversarial attacks including several types and fairly evaluates various attacks under the same setting.
 + **Evaluate the robustness of various models and datasets**: RobustBenchHAR provides a plug-and-play interface to verify the robustness of models on different data sets.
 + **A summary of transfer-based attacks and defenses**: RobustBenchHAR reviews multiple adversarial attacks and defenses, making it easy to get the whole picture of attacks for practitioners.
 
